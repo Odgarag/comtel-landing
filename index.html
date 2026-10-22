@@ -149,109 +149,6 @@
             </div>
           </div>
         </div>
-        <!-- Үнийн санал -->
-        <div class="about-services" id="pricing">
-          <div class="section-heading">
-            <span class="eyebrow">COMTEL INTERNET</span>
-            <h3>Байгууллагын интернэтийн үнийн санал</h3>
-            <p>
-              Байгууллагын хэрэгцээнд тохирсон шилэн кабелийн интернэтийн хурд
-              болон сарын төлбөрийн мэдээлэл.
-            </p>
-          </div>
-
-          <div class="pricing-table-wrap">
-            <table class="pricing-table">
-              <thead>
-                <tr>
-                  <th>Интернэтийн хурд</th>
-                  <th>Сарын төлбөр (НӨАТ-тай)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1 Mbps</td>
-                  <td>105,000 ₮</td>
-                </tr>
-                <tr>
-                  <td>2 Mbps</td>
-                  <td>210,500 ₮</td>
-                </tr>
-                <tr>
-                  <td>3 Mbps</td>
-                  <td>315,500 ₮</td>
-                </tr>
-                <tr>
-                  <td>4 Mbps</td>
-                  <td>421,000 ₮</td>
-                </tr>
-                <tr>
-                  <td>5 Mbps</td>
-                  <td>468,000 ₮</td>
-                </tr>
-                <tr>
-                  <td>6 Mbps</td>
-                  <td>561,500 ₮</td>
-                </tr>
-                <tr>
-                  <td>7 Mbps</td>
-                  <td>655,000 ₮</td>
-                </tr>
-                <tr>
-                  <td>8 Mbps</td>
-                  <td>748,500 ₮</td>
-                </tr>
-                <tr>
-                  <td>9 Mbps</td>
-                  <td>842,000 ₮</td>
-                </tr>
-                <tr>
-                  <td>10 Mbps</td>
-                  <td>877,500 ₮</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="pricing-note">
-            <h4>Нэмэлт мэдээлэл</h4>
-            <ul>
-              <li>Дээрх тариф нь НӨАТ 10% багтсан сарын төлбөр болно.</li>
-              <li>
-                Үйлчилгээ үзүүлэх боломж нь хэрэглэгчийн байршил, сүлжээний
-                хамрах хүрээ болон техникийн нөхцөлөөс хамаарна.
-              </li>
-              <li>
-                10 Mbps-ээс дээш хурдны интернэт, Dedicated, Shared болон цагийн
-                менежменттэй үйлчилгээний үнийг хэрэглэгчийн хэрэгцээнд үндэслэн
-                тусгайлан санал болгоно.
-              </li>
-              <li>
-                Шинэ холболт болон нэмэлт тоног төхөөрөмжийн төлбөр шаардлагатай
-                тохиолдолд тусад нь тооцно.
-              </li>
-            </ul>
-          </div>
-
-          <!-- Гэрээ татах -->
-          <div class="document-download">
-            <div class="document-info">
-              <span class="document-icon">PDF</span>
-              <div>
-                <h3>Үйлчилгээний гэрээ</h3>
-                <p>Гэрээний загварыг PDF хэлбэрээр татаж авна уу.</p>
-              </div>
-            </div>
-
-            <a
-              href="downloads/COMTEL-geree.pdf"
-              class="button button-primary"
-              download
-            >
-              Гэрээ татах <span>↓</span>
-            </a>
-          </div>
-        </div>
       </section>
 
       <section class="benefits section-shell section-pad" id="benefits">
@@ -399,7 +296,121 @@
           </div>
         </div>
       </section>
+      <section class="documents-section" id="documents">
+        <div class="section-heading">
+          <span class="eyebrow">COMTEL SERVICES</span>
+          <h2>Үнийн санал, гэрээ</h2>
+          <p>
+            Байгууллагын шилэн кабелийн интернетийн үйлчилгээний үнийн санал
+            болон гэрээний загвартай танилцана уу.
+          </p>
+        </div>
 
+        <div class="document-cards">
+          <div class="document-card">
+            <div class="document-icon">₮</div>
+            <h3>Үнийн санал</h3>
+            <p>Интернетийн хурд болон сарын төлбөрийн мэдээлэл.</p>
+            <button
+              type="button"
+              class="button button-primary"
+              onclick="document.getElementById('price-modal').hidden = false"
+            >
+              Үнийн санал харах <span>↗</span>
+            </button>
+          </div>
+
+          <div class="document-card">
+            <div class="document-icon">↓</div>
+            <h3>Үйлчилгээний гэрээ</h3>
+            <p>Гэрээний PDF файлыг татаж авах.</p>
+            <a
+              href="downloads/COMTEL-geree.pdf"
+              class="button button-outline"
+              download
+            >
+              Гэрээ татах <span>↓</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="price-modal" id="price-modal" hidden>
+        <div class="price-modal-content">
+          <button
+            type="button"
+            class="modal-close"
+            aria-label="Хаах"
+            onclick="document.getElementById('price-modal').hidden = true"
+          >
+            ×
+          </button>
+
+          <h2>Байгууллагын шилэн кабелийн интернетийн сарын тариф</h2>
+          <p class="price-note">Бүх үнэ НӨАТ-тай.</p>
+
+          <div class="price-table-wrap">
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>Интернетийн хурд</th>
+                  <th>Сарын төлбөр</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 Mbps</td>
+                  <td>105,000 ₮</td>
+                </tr>
+                <tr>
+                  <td>2 Mbps</td>
+                  <td>210,500 ₮</td>
+                </tr>
+                <tr>
+                  <td>3 Mbps</td>
+                  <td>315,500 ₮</td>
+                </tr>
+                <tr>
+                  <td>4 Mbps</td>
+                  <td>421,000 ₮</td>
+                </tr>
+                <tr>
+                  <td>5 Mbps</td>
+                  <td>468,000 ₮</td>
+                </tr>
+                <tr>
+                  <td>6 Mbps</td>
+                  <td>561,500 ₮</td>
+                </tr>
+                <tr>
+                  <td>7 Mbps</td>
+                  <td>655,000 ₮</td>
+                </tr>
+                <tr>
+                  <td>8 Mbps</td>
+                  <td>748,500 ₮</td>
+                </tr>
+                <tr>
+                  <td>9 Mbps</td>
+                  <td>842,000 ₮</td>
+                </tr>
+                <tr>
+                  <td>10 Mbps</td>
+                  <td>877,500 ₮</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="price-note">
+            Үйлчилгээний боломж нь хэрэглэгчийн байршил, хамрах хүрээ, техникийн
+            нөхцөлөөс хамаарна. 10 Mbps-ээс дээш хурд болон Dedicated, Shared,
+            цагийн зохицуулалттай үйлчилгээг хэрэгцээ, техникийн нөхцөлд
+            үндэслэн тусгайлан үнийн санал болгоно. Холболт болон тоног
+            төхөөрөмжийн зардлыг тусад нь тооцно.
+          </p>
+        </div>
+      </div>
       <section class="contact section-shell section-pad" id="contact">
         <div class="contact-heading reveal">
           <span class="section-kicker">04 / ХОЛБОО БАРИХ</span>
