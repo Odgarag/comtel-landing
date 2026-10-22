@@ -166,3 +166,135 @@ h1 span, h2 span { color: #8dcfff; background: linear-gradient(90deg, #f5f8ff 0%
         height: 42px; 
     }
   }
+  /* Pricing section */
+.about-services {
+  margin-top: 70px;
+  scroll-margin-top: 100px;
+}
+
+.section-heading {
+  margin-bottom: 28px;
+}
+
+.section-heading h3 {
+  font-size: clamp(24px, 3vw, 34px);
+  margin: 12px 0;
+}
+
+.section-heading p,
+.document-info p {
+  color: #a6b2c5;
+  line-height: 1.7;
+}
+
+.pricing-table-wrap {
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pricing-table th {
+  background: rgba(35, 115, 255, 0.14);
+  color: #fff;
+  font-weight: 600;
+}
+
+.pricing-table td {
+  color: #dce5f3;
+}
+
+.pricing-table td:last-child {
+  color: #72b8ff;
+  font-weight: 600;
+}
+
+.pricing-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.pricing-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing-note {
+  margin-top: 22px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.035);
+  border-radius: 12px;
+}
+
+.pricing-note h4 {
+  margin: 0 0 12px;
+}
+
+.pricing-note li {
+  color: #a6b2c5;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+/* Contract download */
+.document-download {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  background: rgba(35, 115, 255, 0.07);
+}
+
+.document-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.document-icon {
+  display: grid;
+  place-items: center;
+  min-width: 54px;
+  height: 60px;
+  padding: 6px;
+  border-radius: 8px;
+  background: rgba(35, 115, 255, 0.18);
+  color: #72b8ff;
+  font-weight: 800;
+}
+
+.document-info h3 {
+  margin: 0 0 6px;
+}
+
+.document-info p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .pricing-table th,
+  .pricing-table td {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .document-download {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
