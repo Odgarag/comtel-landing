@@ -1,49 +1,48 @@
-// COMTEL landing page interactions
 const menuToggle = document.querySelector('.menu-toggle')
 const mainNav = document.querySelector('.main-nav')
-
 if (menuToggle && mainNav) {
   menuToggle.addEventListener('click', () => {
-    const isOpen = mainNav.classList.toggle('is-open')
-    menuToggle.setAttribute('aria-expanded', String(isOpen))
-    menuToggle.setAttribute('aria-label', isOpen ? 'Цэс хаах' : 'Цэс нээх')
+    const open = mainNav.classList.toggle('is-open')
+    menuToggle.setAttribute('aria-expanded', String(open))
+    menuToggle.setAttribute('aria-label', open ? 'Цэс хаах' : 'Цэс нээх')
   })
-
-  mainNav.querySelectorAll('a').forEach((link) => {
+  mainNav.querySelectorAll('a').forEach((link) =>
     link.addEventListener('click', () => {
       mainNav.classList.remove('is-open')
       menuToggle.setAttribute('aria-expanded', 'false')
-      menuToggle.setAttribute('aria-label', 'Цэс нээх')
-    })
-  })
-}
-
-// Reveal sections as they enter the viewport.
-const revealItems = document.querySelectorAll('.reveal')
-if ('IntersectionObserver' in window) {
-  const revealObserver = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible')
-          observer.unobserve(entry.target)
-        }
-      })
-    },
-    { threshold: 0.12 },
+    }),
   )
-  revealItems.forEach((item) => revealObserver.observe(item))
-} else {
-  revealItems.forEach((item) => item.classList.add('is-visible'))
 }
-
-// Back-to-top button and footer year.
-const backToTop = document.querySelector('.back-to-top')
-const updateBackToTop = () => {
-  if (backToTop) backToTop.classList.toggle('is-visible', window.scrollY > 500)
-}
-window.addEventListener('scroll', updateBackToTop, { passive: true })
-updateBackToTop()
-
 const year = document.getElementById('year')
 if (year) year.textContent = new Date().getFullYear()
+const modal = document.getElementById('price-modal')
+if (modal) {
+  document.querySelectorAll('[data-open-prices]').forEach((button) =>
+    button.addEventListener('click', () => {
+      modal.classList.remove('hidden')
+      modal.setAttribute('aria-hidden', 'false')
+      document.body.style.overflow = 'hidden'
+    }),
+  )
+  document.querySelectorAll('[data-close-prices]').forEach((button) =>
+    button.addEventListener('click', () => {
+      modal.classList.add('hidden')
+      modal.setAttribute('aria-hidden', 'true')
+      document.body.style.overflow = ''
+    }),
+  )
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.add('hidden')
+      modal.setAttribute('aria-hidden', 'true')
+      document.body.style.overflow = ''
+    }
+  })
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+      modal.classList.add('hidden')
+      modal.setAttribute('aria-hidden', 'true')
+      document.body.style.overflow = ''
+    }
+  })
+}

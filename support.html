@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="COMTEL ХХК — байгууллагын шилэн кабелийн интернэт, сүлжээний шийдэл."
+    />
+    <title>Тусламж | COMTEL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html" aria-label="COMTEL нүүр хуудас"
+          ><img
+            class="brand-logo"
+            src="images/Comtel-logo-def.svg"
+            alt="COMTEL лого"
+        /></a>
+        <button class="menu-toggle" aria-label="Цэс нээх" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" aria-label="Үндсэн цэс">
+          <a href="index.html">НҮҮР</a><a href="about.html">БИДНИЙ ТУХАЙ</a
+          ><a href="why-comtel.html">ЯАГААД COMTEL?</a
+          ><a href="support.html" aria-current="page">ТУСЛАМЖ</a
+          ><a href="contact.html" class="nav-cta">ХОЛБОО БАРИХ ↗</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero container">
+        <span class="kicker">COMTEL / ТУСЛАМЖ</span>
+        <h1>Шаардлагатай мэдээлэл<br /><span>нэг дор.</span></h1>
+        <p>
+          Үнийн саналтай танилцах, гэрээ авах болон интернетийн хурд шалгах
+          сонголтууд.
+        </p>
+      </section>
+      <section class="content-section container">
+        <div class="support-grid">
+          <article class="support-card">
+            <div class="support-icon">₮</div>
+            <h2>Үнийн санал</h2>
+            <p>
+              Байгууллагын шилэн кабелийн интернетийн сарын тариф, үйлчилгээний
+              нөхцөлтэй танилцана уу.
+            </p>
+            <button
+              class="button button-primary"
+              type="button"
+              data-open-prices
+            >
+              ҮНИЙН САНАЛ ХАРАХ <span>↗</span></button
+            ><a
+              class="button button-outline"
+              href="downloads/COMTEL-uniin-sanali.pdf"
+              download
+              >PDF ТАТАХ ↓</a
+            >
+          </article>
+          <article class="support-card">
+            <div class="support-icon">▤</div>
+            <h2>Үйлчилгээний гэрээ</h2>
+            <p>Гэрээний PDF файлыг татаж авах эсвэл гэрээний загвар хүсэх.</p>
+            <a
+              class="button button-outline"
+              href="downloads/COMTEL-geree.pdf"
+              download
+              >ГЭРЭЭ ТАТАХ <span>↓</span></a
+            >
+            <p style="font-size: 12px; margin-top: 12px">
+              Албан ёсны гэрээний PDF файлыг
+              <code>downloads/COMTEL-geree.pdf</code> нэрээр байршуулна.
+            </p>
+          </article>
+          <article class="support-card">
+            <div class="support-icon">⌁</div>
+            <h2>Интернетийн хурд шалгах</h2>
+            <p>
+              Холболтын татах болон илгээх хурдыг шалгах хэрэгслийг нээнэ үү.
+            </p>
+            <a
+              class="button button-primary"
+              href="https://www.speedtest.mn/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >ХУРД ШАЛГАХ <span>↗</span></a
+            >
+          </article>
+        </div>
+      </section>
+      <div
+        class="price-modal hidden"
+        id="price-modal"
+        aria-hidden="true"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="price-title"
+      >
+        <div class="price-modal-box">
+          <button
+            class="modal-close"
+            type="button"
+            data-close-prices
+            aria-label="Хаах"
+          >
+            ×
+          </button>
+          <h2 id="price-title">
+            Байгууллагын шилэн кабелийн интернетийн сарын тариф
+          </h2>
+          <p>Бүх үнэ НӨАТ-тай.</p>
+          <div class="price-wrap">
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th>Интернетийн хурд</th>
+                  <th>Сарын төлбөр</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 Mbps</td>
+                  <td>105,000 ₮</td>
+                </tr>
+                <tr>
+                  <td>2 Mbps</td>
+                  <td>210,500 ₮</td>
+                </tr>
+                <tr>
+                  <td>3 Mbps</td>
+                  <td>315,500 ₮</td>
+                </tr>
+                <tr>
+                  <td>4 Mbps</td>
+                  <td>421,000 ₮</td>
+                </tr>
+                <tr>
+                  <td>5 Mbps</td>
+                  <td>468,000 ₮</td>
+                </tr>
+                <tr>
+                  <td>6 Mbps</td>
+                  <td>561,500 ₮</td>
+                </tr>
+                <tr>
+                  <td>7 Mbps</td>
+                  <td>655,000 ₮</td>
+                </tr>
+                <tr>
+                  <td>8 Mbps</td>
+                  <td>748,500 ₮</td>
+                </tr>
+                <tr>
+                  <td>9 Mbps</td>
+                  <td>842,000 ₮</td>
+                </tr>
+                <tr>
+                  <td>10 Mbps</td>
+                  <td>877,500 ₮</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="notice">
+            Үйлчилгээний боломж нь хэрэглэгчийн байршил, хамрах хүрээ, техникийн
+            нөхцөлөөс хамаарна. 10 Mbps-ээс дээш хурд, Dedicated, Shared болон
+            цагийн зохицуулалттай үйлчилгээнд хэрэгцээ, техникийн нөхцөлд
+            үндэслэн тусгайлан үнийн санал гаргана. Шинэ холболт болон тоног
+            төхөөрөмжийн зардлыг тусад нь тооцож мэдээлнэ.
+          </p>
+          <button class="button button-primary" type="button" data-close-prices>
+            ХААХ
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner container">
+        <a href="index.html" aria-label="COMTEL нүүр"
+          ><img
+            class="footer-logo"
+            src="images/Comtel-logo-def.svg"
+            alt="COMTEL"
+        /></a>
+        <p>Хурдан. Найдвартай. Тогтвортой.</p>
+        <span class="copyright"
+          >© <span id="year"></span> COMTEL ХХК. Бүх эрх хуулиар
+          хамгаалагдсан.</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
