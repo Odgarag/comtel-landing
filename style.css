@@ -18,3 +18,15 @@
 @media(max-width:390px){h1{font-size:36px}.hero-visual{min-height:300px}.orbit--outer{width:260px;height:260px}.orbit--middle{width:215px;height:215px}.orbit--inner{width:165px;height:165px}.network-core{width:145px;height:145px}.core-logo{width:95px;height:95px}.float-card{padding:9px}.float-card small{font-size:9px}.button{padding:0 15px}}
 
 .price-modal{position:fixed;inset:0;z-index:200;display:grid;place-items:center;padding:20px;background:rgba(15,38,67,.55);backdrop-filter:blur(5px)}.price-modal.hidden{display:none!important}stats{grid-template-columns:1fr} .price-modal-box{position:relative;width:min(100%,650px);max-height:85vh;overflow:auto;padding:30px;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 24px 70px rgba(10,40,75,.22)}.price-modal-box h2{color:var(--navy);padding-right:35px}.price-modal-box>p{color:var(--muted)}.modal-close{position:absolute;top:12px;right:16px;border:0;background:transparent;color:var(--navy);font-size:32px;cursor:pointer}.price-modal-box .notice{margin-bottom:20px}
+
+.contact-card-link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-card-link:hover {
+  border-color: #4b9cff;
+  transform: translateY(-3px);
+  transition: 0.2s ease;
+}
