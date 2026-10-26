@@ -30,3 +30,317 @@
   transform: translateY(-3px);
   transition: 0.2s ease;
 }
+
+/* ========================================
+   SUPPORT PAGE — LAYOUT
+======================================== */
+
+.support-intro {
+  max-width: 680px;
+  margin-top: 20px;
+  color: #64748b;
+  line-height: 1.8;
+}
+
+.support-grid-top {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.support-grid-top .support-card {
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.support-grid-top .support-card p {
+  max-width: 480px;
+  line-height: 1.8;
+}
+
+.support-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 22px;
+}
+
+.support-actions .button {
+  margin: 0;
+}
+
+.support-card .button,
+.speed-guide-card .button {
+  text-decoration: none;
+}
+
+/* ========================================
+   INTERNET SPEED GUIDE
+======================================== */
+
+.speed-guide-section {
+  padding-top: 12px;
+  padding-bottom: 90px;
+}
+
+.speed-guide-card {
+  width: 100%;
+  padding: clamp(24px, 4vw, 48px);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.045);
+  color: #334155;
+}
+
+.speed-guide-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 26px;
+}
+
+.speed-guide-icon {
+  flex: 0 0 54px;
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+}
+
+.speed-guide-heading .kicker {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.speed-guide-heading h2 {
+  margin: 0;
+  color: #0f2747;
+  font-size: clamp(21px, 2.6vw, 30px);
+  font-weight: 800;
+  line-height: 1.45;
+  letter-spacing: -0.035em;
+}
+
+.speed-guide-card > p {
+  max-width: 900px;
+  margin: 0 0 16px;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.speed-guide-card .guide-lead {
+  color: #334155;
+  font-size: 16px;
+}
+
+.guide-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 32px;
+}
+
+.guide-topic {
+  min-width: 0;
+  padding: 25px;
+  background: #f8fafc;
+  border: 1px solid #e8eef5;
+  border-radius: 18px;
+}
+
+.guide-topic h3 {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 0 0 20px;
+  color: #122b4b;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+.guide-number {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 11px;
+  background: #e6efff;
+  color: #2463b8;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.guide-topic > p {
+  margin: 0 0 16px;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.guide-steps,
+.guide-list {
+  padding-left: 22px;
+  margin: 0;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.guide-steps li,
+.guide-list li {
+  padding-left: 5px;
+  margin-bottom: 11px;
+}
+
+.guide-steps li::marker {
+  color: #2463b8;
+  font-weight: 800;
+}
+
+.guide-list li::marker {
+  color: #2463b8;
+}
+
+.guide-topic a:not(.button) {
+  color: #2167c5;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.speedtest-button {
+  margin-top: 22px;
+}
+
+.guide-definitions {
+  display: grid;
+  gap: 12px;
+}
+
+.guide-definition {
+  padding: 15px 17px;
+  background: #ffffff;
+  border: 1px solid #e8eef5;
+  border-radius: 12px;
+}
+
+.guide-definition strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #17375e;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.guide-definition p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.guide-contact-topic {
+  background: #f2f7ff;
+  border-color: #dce9fc;
+}
+
+.guide-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 20px 0;
+  padding: 17px;
+  background: #ffffff;
+  border: 1px solid #dce9fc;
+  border-radius: 13px;
+}
+
+.guide-notice-icon {
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #e6efff;
+  color: #2167c5;
+  font-weight: 800;
+}
+
+.guide-notice p {
+  margin: 0;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 760px) {
+  .support-grid-top {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .guide-content {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .speed-guide-section {
+    padding-bottom: 60px;
+  }
+
+  .speed-guide-card {
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+
+  .guide-topic {
+    padding: 20px 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .speed-guide-heading {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .speed-guide-heading h2 {
+    font-size: 21px;
+  }
+
+  .support-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .support-actions .button {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .speedtest-button {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .guide-topic h3 {
+    font-size: 16px;
+  }
+}

@@ -6,91 +6,312 @@
     <meta name="theme-color" content="#ffffff" />
     <meta
       name="description"
-      content="COMTEL ХХК — байгууллагын шилэн кабелийн интернэт, сүлжээний шийдэл."
+      content="COMTEL ХХК-ийн үнийн санал, үйлчилгээний гэрээ болон интернэтийн хурд, чанар шалгах заавар, зөвлөмж."
     />
     <title>Тусламж | COMTEL</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-    <link rel="icon" type="image/x-icon" href="images/Comtel-logo-def.svg" />
+    <link rel="icon" type="image/svg+xml" href="images/Comtel-logo-def.svg" />
   </head>
+
   <body>
     <header class="site-header">
       <div class="nav-wrap">
-        <a class="brand" href="index.html" aria-label="COMTEL нүүр хуудас"
-          ><img
+        <a class="brand" href="index.html" aria-label="COMTEL нүүр хуудас">
+          <img
             class="brand-logo"
             src="images/Comtel-logo-def.svg"
             alt="COMTEL лого"
-        /></a>
-        <button class="menu-toggle" aria-label="Цэс нээх" aria-expanded="false">
-          <span></span><span></span><span></span>
+          />
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Цэс нээх"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
+
         <nav class="main-nav" aria-label="Үндсэн цэс">
-          <a href="index.html">НҮҮР</a><a href="about.html">БИДНИЙ ТУХАЙ</a
-          ><a href="why-comtel.html">ЯАГААД COMTEL?</a
-          ><a href="support.html" aria-current="page">ТУСЛАМЖ</a
-          ><a href="contact.html" class="nav-cta">ХОЛБОО БАРИХ ↗</a>
+          <a href="index.html">НҮҮР</a>
+          <a href="about.html">БИДНИЙ ТУХАЙ</a>
+          <a href="why-comtel.html">ЯАГААД COMTEL?</a>
+          <a href="support.html" aria-current="page">ТУСЛАМЖ</a>
+          <a href="contact.html" class="nav-cta">ХОЛБОО БАРИХ ↗</a>
         </nav>
       </div>
     </header>
+
     <main>
+      <!-- Хуудасны үндсэн гарчиг -->
       <section class="page-hero container">
         <span class="kicker">COMTEL / ТУСЛАМЖ</span>
-        <h1>Шаардлагатай мэдээлэл<br /><span>нэг дор.</span></h1>
+        <h1>
+          Шаардлагатай мэдээлэл
+          <br />
+          <span>нэг дор.</span>
+        </h1>
+        <p class="support-intro">
+          Үнийн санал, үйлчилгээний гэрээ болон интернэтийн хурд, чанарыг шалгах
+          заавар, зөвлөмжтэй танилцана уу.
+        </p>
       </section>
+
+      <!-- Үнийн санал болон гэрээ: нэг мөрөнд -->
       <section class="content-section container">
-        <div class="support-grid">
+        <div class="support-grid support-grid-top">
           <article class="support-card">
-            <div class="support-icon">₮</div>
+            <div class="support-icon" aria-hidden="true">₮</div>
+
             <h2>Үнийн санал</h2>
+
             <p>
-              Байгууллагын шилэн кабелийн интернетийн сарын тариф, үйлчилгээний
+              Байгууллагын шилэн кабелийн интернэтийн сарын тариф, үйлчилгээний
               нөхцөлтэй танилцана уу.
             </p>
-            <button
-              class="button button-primary"
-              type="button"
-              data-open-prices
-            >
-              ҮНИЙН САНАЛ ХАРАХ <span>↗</span></button
-            ><a
-              class="button button-outline"
-              href="downloads/COMTEL-uniin-sanali.pdf"
-              download
-              >PDF ТАТАХ ↓</a
-            >
+
+            <div class="support-actions">
+              <button
+                class="button button-primary"
+                type="button"
+                data-open-prices
+              >
+                ҮНИЙН САНАЛ ХАРАХ <span>↗</span>
+              </button>
+
+              <a
+                class="button button-outline"
+                href="downloads/COMTEL-uniin-sanali.pdf"
+                download
+              >
+                PDF ТАТАХ <span>↓</span>
+              </a>
+            </div>
           </article>
+
           <article class="support-card">
-            <div class="support-icon">▤</div>
+            <div class="support-icon" aria-hidden="true">▤</div>
+
             <h2>Үйлчилгээний гэрээ</h2>
-            <p>Манай байгууллагын гэрээний драфт татахыг хүсвэл</p>
-            <a
-              class="button button-outline"
-              href="downloads/COMTEL-geree.pdf"
-              download
-              >ГЭРЭЭ ТАТАХ <span>↓</span></a
-            >
-          </article>
-          <article class="support-card">
-            <div class="support-icon">⌁</div>
-            <h2>Интернетийн хурд шалгах</h2>
-            <p>Интернэтийнхээ upload болон download хурдыг шалгах бол</p>
-            <a
-              class="button button-primary"
-              href="https://www.speedtest.mn/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >ХУРД ШАЛГАХ <span>↗</span></a
-            >
+
+            <p>
+              COMTEL ХХК-ийн интернэтийн үйлчилгээний гэрээний драфттай
+              танилцаж, татаж авна уу.
+            </p>
+
+            <div class="support-actions">
+              <a
+                class="button button-outline"
+                href="downloads/COMTEL-geree.pdf"
+                download
+              >
+                ГЭРЭЭ ТАТАХ <span>↓</span>
+              </a>
+            </div>
           </article>
         </div>
       </section>
+
+      <!-- Интернэтийн хурд, чанарын заавар -->
+      <section class="content-section container speed-guide-section">
+        <article class="speed-guide-card">
+          <div class="speed-guide-heading">
+            <div class="support-icon speed-guide-icon" aria-hidden="true">
+              ⌁
+            </div>
+
+            <div>
+              <span class="kicker">COMTEL / ТЕХНИКИЙН ЗӨВЛӨМЖ</span>
+              <h2>ИНТЕРНЭТИЙН ХУРД, ЧАНАРЫГ ШАЛГАХ ЗААВАР, ЗӨВЛӨМЖ</h2>
+            </div>
+          </div>
+
+          <p class="guide-lead">
+            Интернэтийн үйлчилгээний хурд, чанарт хэрэглэгчийн төхөөрөмж, дотоод
+            сүлжээ, Wi-Fi холболт, сүлжээний ачаалал болон бусад хүчин зүйлс
+            нөлөөлж болно.
+          </p>
+
+          <p>
+            Та дараах зааврын дагуу интернэтийн хурд, чанараа шалгаж,
+            үйлчилгээний хэвийн ажиллагааг хянах боломжтой.
+          </p>
+
+          <div class="guide-content">
+            <section class="guide-topic">
+              <h3>
+                <span class="guide-number">01</span>
+                Интернэтийн хурдыг хэрхэн шалгах вэ?
+              </h3>
+
+              <ol class="guide-steps">
+                <li>
+                  Компьютероо боломжтой бол сүлжээний кабель (LAN)-аар холбож,
+                  интернэтэд нэвтэрнэ.
+                </li>
+                <li>
+                  <a
+                    href="https://speedtest.mn/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >speedtest.mn</a
+                  >
+                  цахим хуудсанд хандана.
+                </li>
+                <li>Хурд шалгах товчийг дарж хэмжилтийг эхлүүлнэ.</li>
+                <li>
+                  Хэмжилт дууссаны дараа Download, Upload болон Ping
+                  үзүүлэлтүүдтэй танилцана.
+                </li>
+                <li>
+                  Үр дүнг үйлчилгээний гэрээнд заасан хурдтай харьцуулж үзнэ.
+                </li>
+              </ol>
+
+              <a
+                class="button button-primary speedtest-button"
+                href="https://speedtest.mn/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ИНТЕРНЭТИЙН ХУРД ШАЛГАХ <span>↗</span>
+              </a>
+            </section>
+
+            <section class="guide-topic">
+              <h3>
+                <span class="guide-number">02</span>
+                Хэмжилтийн үр дүнг хэрхэн ойлгох вэ?
+              </h3>
+
+              <div class="guide-definitions">
+                <div class="guide-definition">
+                  <strong>Download — татах хурд</strong>
+                  <p>Интернэтээс мэдээлэл татаж авах хурд.</p>
+                </div>
+
+                <div class="guide-definition">
+                  <strong>Upload — илгээх хурд</strong>
+                  <p>Интернэтээр мэдээлэл илгээх хурд.</p>
+                </div>
+
+                <div class="guide-definition">
+                  <strong>Ping — хоцрогдол</strong>
+                  <p>
+                    Төхөөрөмжөөс сервер рүү өгөгдөл дамжуулж, хариу хүлээн
+                    авахад зарцуулах хугацаа. Ихэвчлэн миллисекундээр (ms)
+                    хэмжигдэнэ.
+                  </p>
+                </div>
+
+                <div class="guide-definition">
+                  <strong>Jitter — хоцрогдлын хэлбэлзэл</strong>
+                  <p>Сүлжээний хоцрогдол хэр тогтвортой байгааг илэрхийлнэ.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="guide-topic">
+              <h3>
+                <span class="guide-number">03</span>
+                Хурд шалгахдаа анхаарах зүйлс
+              </h3>
+
+              <p>
+                Хэмжилтийн үр дүнг аль болох бодитой гаргахын тулд дараах
+                зөвлөмжийг дагана уу.
+              </p>
+
+              <ul class="guide-list">
+                <li>
+                  Боломжтой бол Wi-Fi бус, LAN кабелийн холболтоор хурд шалгах.
+                </li>
+                <li>
+                  Хэмжилтийн үед файл татах, видео үзэх болон бусад өндөр
+                  ачаалалтай хэрэглээг түр зогсоох.
+                </li>
+                <li>
+                  Интернэт ашиглаж буй бусад төхөөрөмжийн хэрэглээг түр
+                  хязгаарлах.
+                </li>
+                <li>
+                  Компьютерийн автомат шинэчлэлт, VPN болон бусад сүлжээний
+                  ачаалал үүсгэж болох программыг шалгах.
+                </li>
+                <li>
+                  Шаардлагатай тохиолдолд хэмжилтийг давтан хийж, үр дүнг
+                  харьцуулах.
+                </li>
+              </ul>
+            </section>
+
+            <section class="guide-topic">
+              <h3>
+                <span class="guide-number">04</span>
+                Интернэтийн хурд удааширсан тохиолдолд
+              </h3>
+
+              <p>Дараах хүчин зүйлсийг шалгахыг зөвлөж байна.</p>
+
+              <ul class="guide-list">
+                <li>Сүлжээний төхөөрөмжүүдийн холболт хэвийн эсэх.</li>
+                <li>Wi-Fi дохионы чанар болон төхөөрөмжийн байрлал.</li>
+                <li>
+                  Дотоод сүлжээнд холбогдсон төхөөрөмжүүдийн тоо, хэрэглээ.
+                </li>
+                <li>
+                  Компьютер, роутер болон бусад төхөөрөмжийн хүчин чадал,
+                  тохиргоо.
+                </li>
+                <li>
+                  Тухайн цахим хуудас, сервер болон олон улсын сүлжээний
+                  ачаалал.
+                </li>
+              </ul>
+            </section>
+
+            <section class="guide-topic guide-contact-topic">
+              <h3>
+                <span class="guide-number">05</span>
+                Хэзээ үйлчилгээ үзүүлэгчид хандах вэ?
+              </h3>
+
+              <p>
+                Дээрх шалгалтыг хийсний дараа интернэтийн хурд гэрээнд заасан
+                нөхцөлтэй нийцэхгүй, эсвэл үйлчилгээ тогтворгүй хэвээр байвал
+                COMTEL ХХК-ийн техникийн үйлчилгээний багт хандана уу.
+              </p>
+
+              <div class="guide-notice">
+                <span class="guide-notice-icon" aria-hidden="true">i</span>
+                <p>
+                  Хүсэлт гаргахдаа хурд шалгасан огноо, цаг, хэмжилтийн үр
+                  дүнгийн зураг болон илэрсэн асуудлын талаарх мэдээллийг
+                  ирүүлбэл оношилгоо хийхэд дөхөм болно.
+                </p>
+              </div>
+
+              <a class="button button-outline" href="contact.html">
+                ХОЛБОО БАРИХ <span>↗</span>
+              </a>
+            </section>
+          </div>
+        </article>
+      </section>
+
+      <!-- Үнийн саналын цонх -->
       <div
         class="price-modal hidden"
         id="price-modal"
@@ -108,15 +329,18 @@
           >
             ×
           </button>
+
           <h2 id="price-title">
-            Байгууллагын шилэн кабелийн интернетийн сарын тариф
+            Байгууллагын шилэн кабелийн интернэтийн сарын тариф
           </h2>
+
           <p>Бүх үнэ НӨАТ-тай.</p>
+
           <div class="price-wrap">
             <table class="price-table">
               <thead>
                 <tr>
-                  <th>Интернетийн хурд</th>
+                  <th>Интернэтийн хурд</th>
                   <th>Сарын төлбөр</th>
                 </tr>
               </thead>
@@ -160,6 +384,7 @@
               </tbody>
             </table>
           </div>
+
           <p class="notice">
             Үйлчилгээний боломж нь хэрэглэгчийн байршил, хамрах хүрээ, техникийн
             нөхцөлөөс хамаарна. 10 Mbps-ээс дээш хурд, Dedicated, Shared болон
@@ -167,30 +392,39 @@
             үндэслэн тусгайлан үнийн санал гаргана. Шинэ холболт болон тоног
             төхөөрөмжийн зардлыг тусад нь тооцож мэдээлнэ.
           </p>
+
           <p class="notice">
             Дэлгэрэнгүй мэдээлэл авах, байгууллагынхаа хэрэгцээнд тохирсон
             интернэтийн хурд сонгох болон үнийн санал авахыг хүсвэл бидэнтэй
             холбогдоно уу.
           </p>
+
+          <a class="button button-outline" href="contact.html">
+            ХОЛБОО БАРИХ <span>↗</span>
+          </a>
+
           <button class="button button-primary" type="button" data-close-prices>
             ХААХ
           </button>
         </div>
       </div>
     </main>
+
     <footer class="site-footer">
       <div class="footer-inner container">
-        <a href="index.html" aria-label="COMTEL нүүр"
-          ><img
+        <a href="index.html" aria-label="COMTEL нүүр">
+          <img
             class="footer-logo"
             src="images/Comtel-logo-def.svg"
             alt="COMTEL"
-        /></a>
+          />
+        </a>
+
         <p>Хурдан. Найдвартай. Тогтвортой.</p>
-        <span class="copyright"
-          >© <span id="year"></span> COMTEL ХХК. Бүх эрх хуулиар
-          хамгаалагдсан.</span
-        >
+
+        <span class="copyright">
+          © <span id="year"></span> COMTEL ХХК. Бүх эрх хуулиар хамгаалагдсан.
+        </span>
       </div>
     </footer>
   </body>
